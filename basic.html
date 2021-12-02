@@ -1,14 +1,193 @@
-<!--declaration defines that this document is an HTML5 document-->
+<!--declaration defines ~ document is an HTML5 document-->
 <!DOCTYPE html>
 <!--element is the root element of an HTML page-->
 <html lang="">
-    <!--element contains meta information about the HTML page-->
+    <!--element contains meta information about the HTML page for the browser-->
     <head>
         <!--element specifies title for HTML page ~ shown in browser's title bar-->
-        <title> </title>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>~HTML Note~</title>
     </head>
     <!--element defines the document's body ~ container for all the visible contents-->
     <body>
-    
+
+        <h1> HTML Basic Structure</h1>
+
+    <!--Element-->
+            <!--defined by a start tag, some content, and an end tag-->
+        <p> ~ Element ~ start tag, some content, and an end tag</p>
+        <!--Attribute-->
+            <!--specified in the start tag additional information about HTML elements-->
+        <p> ~ Attribute ~ additional information about HTML elements</p><br>
+
+    <!--Heading-->
+            <!--titles/subtitles that you want to display on a webpage-->
+        <p>Heading ~ titles/subtitles that you want to display on a webpage</p>
+        <h1>Heading ~ h1</h1><h2>Heading ~ h1</h2><h3>Heading ~ h1</h3><h4>Heading ~ h1</h4>
+        <h5>Heading ~ h1</h5><h6>Heading ~ h1</h6><br>
+
+    <!--Paragraph-->
+            <!--Paragraph starts on new line ~ block of text.-->
+        <p>
+            A paragraph always starts on a new line, and browsers automatically add some
+            white space (a margin) before and after a paragraph.
+        </p><br>
+
+    <!--Style-->
+            <!--The HTML style attribute is used to add styles to an element-->
+        <p style="color: brown">I am brown using style attribute</p><br>
+
+    <!--Formatting-->
+            <!--HTML contains several elements for defining text with a special meaning-->
+        <p>
+            <!--<b> - Bold text-->
+            <!--<strong> - Important text-->
+            <!--<i> - Italic text-->
+            <!--<em> - Emphasized text-->
+            <!--<mark> - Marked text-->
+            <!--<small> - Smaller text-->
+            <!--<del> - Deleted text-->
+            <!--<ins> - Inserted text-->
+            <!--<sub> - Subscript text-->
+            <!--<sup> - Superscript text-->
+            <b>I am </b> <strong>formatted</strong> <i>using HTML format</i>
+        </p><br>
+
+    <!--Quotation and Citation-->
+            <!--<blockquote>,<q>, <abbr>, <address>, <cite>, <bdo> HTML elements-->
+        <p>Quotation and Citation Element in HTML</p><br>
+
+    <!--Hyperlinks-->
+            <!--You can click on a link and jump to another document.-->
+            <!--Link Attributes-->
+            <!--target ~ specifies where to open the linked document.
+                _self - Default. Opens the document in the same window
+                _blank - Opens the document in a new window or tab
+                _parent - Opens the document in the parent frame
+                _top - Opens the document in the full body of the window
+            title ~ shows when hovered over -->
+        <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">w3school</a>
+        <!--Image link-->
+        <a href="https://www.w3schools.com/html/html_links.asp">
+            <img src="https://c.tenor.com/-ShW0kn-xuMAAAAM/cute-adorable.gif" alt="">
+        </a>
+        <!--Email link-->
+        <a href="mailto:someone@example.com" id="bookmark">Send Email</a>
+        <!--bookmark link-->
+        <a href="#bookmark">Bookmark</a>
+
+    <!--Image-->
+        <!--Type of Images
+            ~ APNG ~ Animated Portable Network Graphics
+            ~ GIF ~ Graphics Interchange Format
+            ~ ICO ~ Microsoft Icon
+            ~ JPEG ~ Joint Photographic Expert Group image
+            ~ PNG ~ Portable Network Graphics
+            ~ SVG ~ Scalable Vector Graphics-->
+        <img src="https://c.tenor.com/-ShW0kn-xuMAAAAM/cute-adorable.gif" alt="Cute Gif">
+
+    <!--Favicon-->
+        <!--A favicon is a small image displayed next to the page title in the browser tab.-->
+
+    <!--Lists-->
+        <!--Unordered List-->
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <!--Unordered List-->
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <!--Description List-->
+        <!--<dt> tag defines the term (name)
+            <dd> tag describes each term:-->
+        <dl>
+            <dt>Item 1</dt>
+            <dd>Item 2</dd>
+            <dd>Item 3</dd>
+        </dl>
+        <br>
+
+    <!--Table-->
+        <!--Row ~ tr tag ~ horizontal ~ rowspan to combine
+            Columns ~ td tag ~ vertical ~ colspan to combine
+            Heading ~ th tag ~ -->
+        <table border="1">
+            <caption>Example Table</caption>
+            <thead>
+                <tr>
+                    <th>Heading 1</th>
+                    <th>Heading 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Item 1</td>
+                    <td>Item 2</td>
+                </tr>
+                <tr>
+                    <td>Item 3</td>
+                    <td>Item 4</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+        <!--Nested Table-->
+        <table border="1">
+            <tr>
+                <td>Item 2</td>
+                <td>
+                    <table border="1">
+                        <td>Item 3</td>
+                        <td>Item 4</td>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Item 3</td>
+                <td>Item 4</td>
+            </tr>
+        </table>
+        <br>
+
+
+    <!--div-->
+        <!--Block Element ~ starts on a new line and takes full width available-->
+        <div style="border: 1px solid black">Div ~ block element</div>
+
+    <!--span-->
+        <!--Inline Element ~ does not start on a new line and takes up once necessary width-->
+        <span style="border: 1px solid black">Span ~ inline element</span><br>
+
+    <!--Iframe-->
+        <!--add other existing websites-->
+        <iframe
+                src="https://www.google.com" frameborder="0">
+        </iframe>
+        <br>
+
+    <!--Embed-->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6502594.546087102!2d-119.306607!3d37.
+            26917445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2s
+            California!5e0!3m2!1sen!2sus!4v1638414694623!5m2!1sen!2sus" width="600" height="450" style="border:0;"
+            allowfullscreen="" loading="lazy">
+        </iframe>
+
+    <!--Entries-->
+
+    <!--Iframe-->
+
     </body>
+
 </html>
