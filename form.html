@@ -1,0 +1,122 @@
+<!--declaration defines ~ document is an HTML5 document-->
+<!DOCTYPE html>
+<!--element is the root element of an HTML page-->
+<html lang="">
+    <!--element contains meta information about the HTML page for the browser-->
+    <head>
+        <!--element specifies title for HTML page ~ shown in browser's title bar-->
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>~HTML Note~</title>
+    </head>
+    <!--element defines the document's body ~ container for all the visible contents-->
+    <body>
+    <!--Form types and attribute-->
+        <form action="" method="">
+            <div>
+                Text:
+                <input type="text" placeholder="some text" name="user text" required><br>
+                <input type="text" value="some text" disabled><br>
+                <input type="text" value="some text" readonly><br>
+            </div>
+            <div>
+                Submit Button:
+                <input type="submit"><br>
+            </div>
+            <div>
+                color:
+                <input type="color"><br>
+            </div>
+            <div>
+                Date:
+                <input type="date"><br>
+            </div>
+            <div>
+                Email:
+                <input type="email"><br>
+            </div>
+            <div>
+                Hidden:
+                <input type="hidden"><br>
+            </div>
+            <div>
+                Number:
+                <input type="number"><br>
+            </div>
+            <div>
+                Password:
+                <input type="password"><br>
+            </div>
+            <div>
+                Reset:
+                <input type="reset"><br>
+            </div>
+            <div>
+                Time:
+                <input type="time"><br>
+            </div>
+            <div>
+                Url:
+                <input type="url"><br>
+            </div>
+            <div>
+                Range:
+                <input type="range" min="10" max="1000"><br>
+            </div>
+            <div>
+                File:
+                <input type="file" multiple><br>
+            </div>
+            <div>
+                TextArea:
+                <textarea name="text area text" id="" cols="30" rows="10"></textarea><br>
+            </div>
+            <div>
+                Dropdown:
+                <select name="" id="" size="2" multiple>
+                    <option value="Some text1">some text1</option>
+                    <option value="Some text2">some text2</option>
+                    <option value="Some text3" selected>some text3</option>
+                </select>
+            </div>
+            <div>
+                Radio:
+                <input type="radio" name="animal"> cat
+                <input type="radio" name="animal"> dog
+                <input type="radio" name="animal"> both
+                <input type="radio" name="animal"> none
+            </div>
+            <div>
+                Check Box:
+                <input type="checkbox" name="animal"> cat
+                <input type="checkbox" name="animal"> dog
+                <input type="checkbox" name="animal"> both
+                <input type="checkbox" name="animal"> none
+            </div>
+            <div>
+                Datalist ~
+                search<input type="text" list="search">
+                <datalist id="search" >
+                    <option value="Apple">
+                    <option value="Orange">
+                    <option value="Tomato">
+                    <option value="Apple">
+                </datalist>
+                <input type="submit" value="search">
+            </div>
+        </form>
+
+        <form action="">
+            <fieldset>
+                <legend>Name</legend>
+                <label for="fname">First Name</label>
+                <input type="text" name="name" id="fname"><br>
+            </fieldset>
+            <fieldset>
+                <input type="submit"><br>
+            </fieldset>
+        </form>
+    </body>
+</html>
